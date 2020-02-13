@@ -4,6 +4,16 @@ void setup() {
   // initialize digital pin LED_PIN as an output.
   pinMode(LED_PIN, OUTPUT);
 }
+/*void dimmer(int freq, int duty) {
+  int period, onTime, offTime;
+  period = 1000/freq;
+  onTime = period * duty / 100;
+  offTime = period - onTime;
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(onTime);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(offTime);
+}*/
 
 void timedBlink(int interval) {
     digitalWrite(LED_PIN, HIGH);   // turn the LED on (HIGH is the voltage level)
